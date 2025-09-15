@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import logoImg from '@/assets/logo.png';
 
@@ -8,7 +9,7 @@ export default function MainHeader() {
     return (
         <header className={classes.header}>
             <Link className={classes.logo} href="/">
-                <img src={logoImg.src} />
+                <Image src={logoImg} priority />
                 NextLevel Food
             </Link>
 
